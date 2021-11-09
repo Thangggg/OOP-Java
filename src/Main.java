@@ -11,6 +11,12 @@ public class Main {
         System.out.println("Your Rectangle \n"+ rectangle.display());
         System.out.println("Perimeter of the Rectangle: "+ rectangle.getPerimeter());
         System.out.println("Area of the Rectangle: "+ rectangle.getArea());
+
+
     }
-    }
+
+
+
+
+}
 
