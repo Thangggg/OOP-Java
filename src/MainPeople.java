@@ -29,7 +29,6 @@ public class MainPeople {
                 for (int i = 0; i <array.length; i++) {
                     array[i] = people1.toString();
                 }
-
             case 3:
 
         }
