@@ -2,11 +2,24 @@ public class People {
     String name;
     int age;
     String gender;
+    private int id;
+    private static int idNumber = 1;
+
+    public People(){};
 
     public People(String name, int age, String gender) {
+        this.id = idNumber++;
         this.name = name;
         this.age = age;
         this.gender = gender;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getName() {
@@ -33,8 +46,7 @@ public class People {
         this.gender = gender;
     }
 
-    @Override
     public String toString() {
-        return " Tên: " + name + " - Tuổi: " + age + " - Giới tính: " + gender;
+        return " Tên: " + name + " - Tuổi: " + age + " - Giới tính: " + gender + " - Id: " + id;
     }
 }
